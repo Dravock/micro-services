@@ -27,9 +27,12 @@ h4{
 
 /* UNDERLINE HOVER EFFECT */
 .hover-underline-animation {
-    display: inline-block;
+    width: fit-content;
     position: relative;
-    @apply text-black text-2xl ;
+    @apply text-black ;
+}
+.hover-underline-animation:hover {
+    font-weight: bold;
 }
 
 .hover-underline-animation::after {
@@ -42,7 +45,7 @@ h4{
     left: 0;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-    @apply bg-[#f5a523] ;
+    @apply bg-black ;
 }
 
 .hover-underline-animation:hover::after {
@@ -64,3 +67,27 @@ h4{
     transition: 700ms max-height ;
     max-height: 0px;
 }
+
+.sidebar {
+    background-color: #ff9d00cd !important;
+    padding: 0;
+    overflow: hidden;
+    max-width: 0rem;
+    transition: 700ms max-width ease-in;
+}
+
+
+.sidebar-transition{
+    max-width: 35rem;
+    display: block;
+}
+
+.hide-box{
+    top:-1000px;
+    transition: top 2s ease-in; 
+}
+
+.slide-in{
+    top: 0%;
+}
+
